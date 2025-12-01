@@ -1,0 +1,3 @@
+registry=https://nexux-ip/repository/group-or-host/
+strict-ssl=false
+engine-strict=true
