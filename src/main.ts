@@ -1,3 +1,5 @@
-import { generateUUIDv4 } from "@kavehlightjs/utils";
+import { antiSSRF } from "@kavehlightjs/middlewares";
+import * as express from "express";
 
-console.log(generateUUIDv4());
+const app = express.Router();
+app.use(antiSSRF("localhost", "127.0.0.1"));
